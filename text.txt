@@ -1,1 +1,225 @@
-hii hello
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+{\ }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Mithilesh}{Joshi}{ 
+\href{mailto:mithileshjoshi100@gmail.com}{mithileshjoshi100@gmail.com} | +919422842528 | Pune,India
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Experienced}
+{\ }
+\begin{tightemize}
+\item Salesforce
+\item Python
+\item Apex
+\item Lightning Web Components
+\end{tightemize}
+\sectionsep
+\subsection{Intermediat}
+{\ }
+\begin{tightemize}
+\item Javascript
+\item SQL
+\item React
+\item Flask
+\item Django
+\item HTML, CSS
+\end{tightemize}
+\sectionsep
+
+\subsection{Familiar}
+{\ }
+\begin{tightemize}
+\item Android
+\item Matlab
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/mithileshjoshi100}{\bf mithileshjoshi100} \\
+LinkedIn://  \href{https://www.linkedin.com/in/mithileshjoshi100/}{\bf mithileshjoshi100} \\
+Leetcode://  \href{ https://leetcode.com/mithileshjoshi100/}{\bf mithileshjoshi100} \\
+trailblazer://  \href{https://trailblazer.me/id/mjoshi156}{\bf mjoshi156} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Advanced Machine Learning \\
+Open Source Software Engineering \\
+Advanced Interactive Graphics \\
+Compilers + Practicum \\
+Cloud Computing \\
+Evolutionary Computation \\
+Defending Computer Networks \\
+Machine Learning \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Accenture}
+\descript{| Salesforce Developer }
+\location{Oct 2021 - Present | Pune, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed a python package to help salesforce data migration teem for data pre-validation. resulting to cut down paperwork by 75\%. Worked in test driven development, I write the test classes for Python modules ( Unite testing ) Unittest, nose2 and pytest. Maintained code on git repository and optimized it by 30\% with the help of data structures
+\item Collaborated with cross-functional development team members to analyze potential system solutions based on evolving client requirements. Debugged code and located root causes of problems by reviewing configuration files and logs. Collaborated with designers and UX experts to create intuitive and user-friendly interfaces.
+\item Write clean, efficient, and maintainable code using best practices and design patterns.Ensure code quality and scalability through code reviews and testing.
+\item Worked on Apex, Test Class, Clean Code, LWC, (HTML,CSS,JS), Code Cleanup, Validation Rules, Sandbox,Approval Processes, Workflow Rules, Modified Apex Classes for code optimization, configuration Changes.
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Web Based Online Python Compiler}
+\descript{| Webapp}
+\begin{tightemize}
+\item TechStack Used: Python, Flask, HTML, CSS, JS, Shell
+\item Source Code :\href{ https://github.com/mithileshjoshi100/PyOnlineCompiler.git}{\bf Python-Online-Compiler}
+\item Go-Live \href{ http://mithileshjoshi100.pythonanywhere.com/}{\bf Python-Online-Compiler}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Google Keep Clone(Notes App)}
+\descript{| Webapp}
+\begin{tightemize}
+\item TechStack Used: Python, Flask, HTML, CSS, JS, Shell, SQL
+\item Complete Notes Taking App having Authentication, Storage
+\item Source Code :\href{https://github.com/mithileshjoshi100/NotesApp/tree/master}{\bf Notes-App}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Sant Gadge Baba Amravati University}
+\descript{HSC}
+\location{Jul 2021 | Shegaon, MH}
+Shri Sant Gajanan Maharaj College of Engineering \\
+\location{ SGPA: 10.0 / 10.0}
+\sectionsep
+
+\subsection{Amravati University}
+\descript{HSC}
+\location{Jun 2017 | Andura, MH}
+\location{ 76 / 100}
+\sectionsep
+
+\subsection{Javahar Navoday Vidyalaya}
+\descript{SSC}
+\location{Jun 2015 | Shegaon, MH}
+\location{ CGPA: 8.0 / 10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certification
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certification}
+\runsubsection{salesforce administrator}
+
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
